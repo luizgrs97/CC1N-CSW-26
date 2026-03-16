@@ -22,5 +22,57 @@
 
     <h2>Texto grande e pequeno</h2>
     <p>Estamos trabalhando aqui com um <span style="font-size: larger">texo grande</span> e um <small>texto pequeno</small> nesta frase</p>
+
+    <h2>Texto deletado</h2>
+    <p>Neste paragrafo vamos trabalhar com um texto <del>que foi excluído</del> da frase (forma semântica)</p>
+
+    <h2>Texto inserido</h2>
+    <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase de forma semântica</p>
+    <p>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u> na frase de forma não semântica</p>
+    
+    <h2>Texto sobrescrito</h2>
+    <p>Vamos demonstrar uma fórmula da equação do segundo grau ax<sup>2</sup>+bx+c=0 usando a tag sup</p>
+
+    <h2>Texto subscrito</h2>
+    <p>Vamos demonstrar o texto subescrito com a fórmula da água H<sub>2</sub>O</p>
+
+    <h2>Trecho de código fonte</h2>
+    <p>Neste exemplo vou demonstrar um trecho de código</p>
+    <p>Inserindo uma rotina em batch script:</p>
+    <pre>
+        <code>
+    :ro_number
+    set "isnumber=" & set "num="
+    set "tempstr=%~1"
+    for %%Z in (%numbers%) do (
+        if "!tempstr!" neq "" set "tempstr=!tempstr:%%Z=!"
+    )
+    if "!tempstr!" neq "" exit /b
+    set "num=%~1"
+    set "num=!num:0=!"
+    if not "%~1"=="" if not "!num!"=="" (
+        for /f %%Z in ("!num:~0,1!") do (
+            set "num=%~1"
+            set num=!num:*%%Z=%%Z!
+            set isnumber=1
+        )
+    )
+    exit /b
+        </code>
+    </pre>
+
+    <h2>Citações (quotation) simples</h2>
+    <p>Segundo Steve Jobs <q>A tecnologia move o mundo</q></p>
+
+    <h2>Citações completas (livros)</h2>
+    <p>Segundo Sandra Kussunoki no seu livro A dança e o ventre:</p>
+    <p><blockquote>Dados existentes sobre intervenções cirúrgicas nos corpos contemporâneos visando à obtenção de um corpo mais próximo do padrão estético tais como lipoaspiração, próteses de silicone, entre outras, comprovam essa busca obsessiva pelo ideal de perfeição, que é baseado principalmente na magreza.</blockquote></p>
+
+    <h2>Abreviações</h2>
+    <p>Estamos estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="ltr">Estou estudando HTML</bdo></p>
+    <p><bdo dir="rtl">Estou estudando HTML</bdo></p>
 </body>
 </html>
