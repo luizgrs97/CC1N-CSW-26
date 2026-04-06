@@ -6,22 +6,107 @@
     <title>Aula 09</title>
 </head>
 <body>
+    <style>table, td {border-collapse: collapse; border: 2px solid gray; padding: 4px;}</style>
     <h1>Formulário</h1>
     <br>
     <form action="naosei" method="post">
-        <table border="1">
+        <table>
             <tbody>
                 <tr>
-                    <td>Nome:</td>
-                    <td><input type="text" name="username" id="username" size="40" maxlength="30" value="" placeholder="Digite seu nome" required></td>
+                    <td><label for="">Nome:</label></td>
+                    <td><input type="text" name="username" id="username" size="20" maxlength="30" value="" placeholder="Digite seu nome" required></td>
                 </tr>
                 <tr>
-                    <td>E-mail pessoal:</td>
-                    <td><input type="email" name="email" id="email" size="40"></td>
+                    <td><label for="">E-mail pessoal:</label></td>
+                    <td><input type="text" name="emailname" id="emailname" size="20"></td>
                 </tr>
                 <tr>
-                    <td>Email (patter):</td>
-                    <td><input type="email" name="email" id="email" size="40" placeholder="Digite seu email com @" required></td>
+                    <td><label for="">Email (patter):</label></td>
+                    <td><input type="email" name="email" id="email" size="20" placeholder="Digite seu email com @" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Senha:</label></td>
+                    <td><input type="password" name="password" id="password" size="20" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Idade:</label></td>
+                    <td><input type="text" name="years" size="5"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="">Deixe um comentário:</label>
+                        <br>
+                        <textarea name="comment" id="comment" cols="40" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Matéria de interesse:</label>
+                        <br>
+                        <input type="checkbox" name="backend" value="backend"> Backend
+                        <br>
+                        <input type="checkbox" name="frontend" value="frontend"> Frontend
+                        <br>
+                        <input type="checkbox" name="fullstack" value="fullstack"> Fullstack
+                    </td>
+                    <td>
+                        <label for="">Tipo de Viagem:</label>
+                        <br>
+                        <input type="radio" name="viagem" id="viagem" value="negocios">Negócios
+                        <br>
+                        <input type="radio" name="viagem" id="viagem" value="lazer">Lazer
+                        <br>
+                        <input type="radio" name="viagem" id="viagem" value="turismo">Turismo
+                        <br>
+                        <input type="radio" name="viagem" id="viagem" value="academico">Acadêmico
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Esporte favorito:</label>
+                        <select name="esporte" id="esporte" size="4">
+                            <option value="futebol">Futebol</option>
+                            <option value="basquete">Basquete</option>
+                            <option value="volei">Vôlei</option>
+                            <option value="Tênis">Tênis</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="">Investimentos:</label>
+                        <select name="invest" id="invest">
+                            <option value=""></option>
+                            <option value="poupanca">Poupança</option>
+                            <option value="cdb">CDB</option>
+                            <option value="tesouro">Tesouro Direto</option>
+                            <option value="fundos">Fundos Imobiliários</option>
+                            <option value="cdi">CDI</option>
+                            <option value="debentures">DEBÊNTURES</option>
+                            <option value="cripto">Criptomoedas</option>
+                            <option value="acoes">Ações</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Escolha uma cor:</label>
+                        <input type="color" name="color" id="color">
+                    </td>
+                    <td>
+                        <label for="">Selecione um arquivo:</label>
+                        <input type="file" name="file" id="file">
+                        <p><br></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="">Data e Hora envio:</label>
+                        <input type="datetime-local">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Enviar"></td>
+                    <td><input type="reset" value="Limpar"></td>
                 </tr>
             </tbody>
         </table>
