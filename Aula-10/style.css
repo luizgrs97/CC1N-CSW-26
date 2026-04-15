@@ -1,0 +1,16 @@
+#external {
+    background-color: lightgray;
+    
+    h1 {
+        background-color: orangered;
+        color: white;
+    }
+
+    h2 {
+        color: orangered;
+    }
+
+    p {
+        color: blue;
+    }
+}
