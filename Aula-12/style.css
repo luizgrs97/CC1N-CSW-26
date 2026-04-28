@@ -3,30 +3,40 @@ body {
     background-color: black;
     color: white;
     margin: 0 2vw;
+    text-align: center;
 }
 
-h1, h2 {
+main {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h1, h2, a {
     text-align: center;
 }
 
 .card {
     display: flex;
     background-color: rgb(32, 32, 32);
-    padding: 0.1vh 2vw;
+    padding: 0.1em 0.25em;
     border: 2px inset white;
     border-radius: 2em;
     overflow: hidden;
 
     section {
-        margin: 0 auto;
+        margin: 1em 1em;
+        width: 100%;
 
         div {
             display: flex;
             flex-direction: column;
+            margin: 0;
             
             a {
                 text-decoration: none;
                 color: white;
+                margin: 0 auto;
             }
 
             a::before, a:after {
@@ -36,16 +46,38 @@ h1, h2 {
     }
 }
 
+@media (max-width: 768px) {
+    div.card {
+        margin: 1em 2em;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    div.card {
+        margin: 1em 0;
+    }
+
+    img {
+        float: left;
+    }
+}
+
 img {
     padding: 0.5em;
-    float: left;
-    height: 20vw;
+    height: 9em;
+    width: 9em;
     border-radius: 1em;
 }
 
+
 .divtitle {
     text-align: center;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 h2 {
@@ -56,8 +88,12 @@ h2 {
     margin-bottom: 1em;
     outline: 1px solid blue;
 
-    a:hover {
+    a:visited {
         color: rgb(192, 192, 255);
+    }
+
+    a:hover {
+        color: rgb(128, 128, 255);
     }
 }
 
@@ -68,8 +104,12 @@ h2 {
 #japan {
     outline: 1px solid red;
 
-    a:hover {
+    a:visited {
         color: rgb(255, 192, 192);
+    }
+
+    a:hover {
+        color: rgb(255, 128, 128);
     }
 }
 
