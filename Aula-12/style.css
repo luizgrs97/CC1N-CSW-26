@@ -39,8 +39,12 @@ h1, h2, a {
                 margin: 0 auto;
             }
 
-            a::before, a:after {
-                content: '*';
+            a::before {
+                content: '\1F7B5  \266B  ';
+            }
+
+            a:after {
+                content: ' \1F7B5';
             }
         }
     }
