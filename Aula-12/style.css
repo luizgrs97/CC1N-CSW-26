@@ -30,7 +30,7 @@ h1, h2, a {
 
 .card {
     display: flex;
-    background-color: rgba(16, 16, 16, 0.6);
+    background-color: rgba(36, 36, 36, 0.6);
     padding: 0.1em 0.25em;
     border: 2px inset white;
     border-radius: 2em;
