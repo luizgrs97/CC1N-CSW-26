@@ -83,7 +83,7 @@ h1, h2, a {
     }
 }
 
-img {
+div img {
     padding: 0.5em;
     height: 9em;
     width: 9em;
