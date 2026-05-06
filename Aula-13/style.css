@@ -25,7 +25,8 @@ body{
     }
 
     p:hover {
-        border-bottom: 0.5em solid black;
+        filter: invert(100%);
+        border-bottom: 0.5em solid white;
         margin-bottom: 0.5em;
     }
 }
@@ -38,16 +39,15 @@ body{
         padding: 1em;
         border-radius: 1em;
         background-color: lightgray;
+        flex: 1;
     }
 
     .item1 {
         background-color: rgb(255, 192, 192);
-        flex-grow: 1;
     }
 
     .item2 {
         background-color: rgb(255, 255, 192);
-        flex-grow: 1;
     }
 
     .item3 {
@@ -57,12 +57,10 @@ body{
 
     .item4 {
         background-color: rgb(192, 255, 255);
-        flex-grow: 1;
     }
 
     .item5 {
         background-color: rgb(192, 192, 255);
-        flex-grow: 1;
     }
 
     p:active {
