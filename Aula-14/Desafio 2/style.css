@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0.25em;
-    min-width: calc(100vh - 0.5em);
     min-height: calc(100vh - 0.5em);
     border-radius: 1em;
     contain: paint;
@@ -53,8 +52,21 @@ main {
     }
 
     section {
+        display: flex;
         flex-grow: 1;
-        background-color: #ecf0f1;
+        align-content: flex-start;
+        align-items: flex-start;
+        gap: 1em;
+        margin: 2em;
+        flex-wrap: wrap;
+
+        div {
+            flex-grow: 1;
+            padding: 1.5em;
+            background-color: #ecf0f1;
+            text-align: center;
+            border-radius: 1em;
+        }
     }
 }
 
